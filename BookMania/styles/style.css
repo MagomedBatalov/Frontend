@@ -1,0 +1,191 @@
+/* Конвентиварние шрифтов:  */
+@import url(../fonts/Bellota.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  font: 400 18.07px "Bellota", sans-serif;
+  max-width: 1920px;
+}
+
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*               HEADER              */
+
+header {
+  max-width: 1920px;
+  /* display: flex;
+  justify-content: center; */
+  margin-top: 0px;
+  background: #EAF5FF;
+  height: 199px;
+}
+
+.catalog {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.input {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 19px;
+}
+
+#fname {
+  margin-top: -1%;
+  margin-left: -69%;
+  border-radius: 8px;
+  font-size: 18px; 
+  width: 348%;
+  height: 60px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #03111F;
+}
+
+.header__icons {
+  margin-left: 20%;
+}
+
+.header__icon {
+  margin-right: 0%;
+}
+
+/* ****************************************** */
+
+/*                  MAIN                      */
+
+main {
+  max-width: 1920px;
+}
+
+main .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-end;
+}
+
+.info {
+  max-width: 700px;
+  margin-top: 60px;
+}
+
+.info__contacts {
+  font: 700 45px "Bellota", serif;
+  height: 60px;
+}
+
+.info__title{
+  font: 700 22.59px "Bellota", serif;
+  margin-top: 20px;
+}
+
+span {
+  font: 700 18.07px "Bellota", serif;
+}
+
+.info_text {
+  margin-top: 20px;
+}
+
+.socials {
+  display: flex;
+  padding: 0px;
+  margin-top: 30px;
+}
+
+.body__icons {
+  margin-right: 10%;
+}
+
+.app__button {
+  margin-top: 30px;
+}
+
+.app__button__icon {
+  margin-right: 5%;
+}
+
+.map {
+  margin-bottom: 14.5%;
+  margin-right: 15.3%;
+}
+
+/* ************************************ */
+
+/*                    FOOTER            */
+
+footer {
+  max-width: 1920px;
+  background-color: #03111F;
+  margin-top: 289px;
+  color: white;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__socials {
+  margin-top: 99px;
+  padding-bottom: 120px;
+}
+
+.footer__article {
+  font: 700 32px "Bellota", serif;
+  margin-top: 115px;
+  margin-bottom: 29px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__text {
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__socials__icons {
+  margin-bottom: 60px;
+}
+.footer__under__socials {
+  margin-bottom: 2%;
+}
+
+.footer__icon {
+  margin-right: 12%;
+}
+
+.our__payment {
+  font: 700 20px "Bellota", serif;
+  margin-top: 68px;
+}
+
+.image__payment {
+  margin-top: 20px;
+  margin-right: 5%;
+}
+
+.OOO2022 {
+  margin-top: 124px;
+}
+

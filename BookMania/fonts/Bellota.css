@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Bellota";
+  scr: local(""), 
+    url("./Bellota-Bold.ttf") format ("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+  font-family: "Bellota";
+  scr: local(""), 
+    url("./BellotaText-Regular.ttf") format ("truetype");
+    font-weight: 400;
+}
