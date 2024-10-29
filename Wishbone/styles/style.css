@@ -1,0 +1,527 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/* ________________________________ */
+/* ALL */
+
+* {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  /* line-height: 1.5;
+  line-height: 1; */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Отключаем горизонтальный скроллинг */
+  box-sizing: border-box;
+}
+
+
+/* ____________________________________ */
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-around; /* Для распределения содержимого хедера */
+  height: 90px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-around; /* Можно скорректировать для нужного расположения */
+  width: 100%;
+}
+
+.header__content__menu {
+  display: flex;
+  align-items: center; /* Вертикальное выравнивание меню */
+}
+
+.header__content__menu__link {
+  margin-right: 20px;
+  font-size: 15px;
+  color: black;
+}
+
+#header__menu__button {
+  background-color: #1B1A1A;
+  color: white;
+  border-radius: 14px;
+  width: 155px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.header__content__logo{
+  display: flex;
+  justify-content: center; /* Центрирует изображение по горизонтали */
+  align-items: center;     /* Центрирует изображение по вертикали */
+  height: 100%;            /* Убедитесь, что div имеет высоту */  
+}
+
+.header__menu a,
+.header__menu button {
+  flex-basis: 150px;
+}
+
+/* ______________________________________ */
+
+/* HOME */
+
+.home{
+  display: flex;
+  justify-content: space-between;
+  background: #ECE7E4;
+  width: 100%;
+}
+
+.home__text{
+  width: 50%;
+  padding: 77px 60px 77px 60px;
+  align-content: center;
+}
+
+.home__img {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+  overflow: hidden; /* Скрываем возможные выходы контента за границы */
+}
+
+.home__img img {
+  width: 100%; /* Изображение займет всю ширину контейнера */
+  height: auto; /* Изображение займет всю высоту контейнера */
+  object-fit: cover;
+}
+
+.home__text__container{
+  width: 600px;
+  height: 566px;
+  display: inline-block;
+  /* border: 1px solid black; */
+}
+
+h1{
+  font: bold;
+  font-size: 60px;
+  padding-bottom: 18px;
+  font-weight: 400;
+}
+
+#p__logo{
+  color: #645C55;
+  padding-bottom: 20px;
+}
+
+#p__text{
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+/* ________________________________________________ */
+/* OUR FIRM */
+
+.our_firm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 61px;
+}
+
+.our__firm__info{
+  max-width: 536px;
+}
+
+.our__film__info__lorem{
+  padding-top: 36px;
+  line-height: 1.5;
+}
+
+.our__firm__info__stephen img{
+  width: 89px;
+  height: 82px;
+  border:3px solid #CEC4BC;
+  border-radius: 100%;
+}
+
+.our__firm__info__stephen{
+  padding-top: 34px;
+  display: flex;
+}
+
+h3{
+  font-size: 32px;
+}
+
+.our__film__info__title{
+  justify-content: center;
+  text-align: center;
+}
+
+.stephen__collier{
+  padding-left: 10px;
+}
+
+#Stephen__Collier{
+  width: 145px;
+  font-size: 17px;
+}
+
+#Senior__Partner{
+  width: 110px;
+  color: #645C55;
+  font-size: 14px;
+}
+
+/* _____________________________________________ */
+/* REEDING HOUSE */
+
+.reeding__house{
+  margin-top: 100px;
+  position: relative;
+  height: 100vh;
+  background-image: url('/images/IMAGE.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.reeding__house__text{
+  position: absolute; /* Абсолютное позиционирование текста поверх изображения */
+  right: 60px; /* Отступ справа 60px */
+  top: 50%; /* Центрирование по вертикали */
+  transform: translateY(-50%); /* Чтобы текст оказался точно по центру вертикально */
+  color: #000; /* Цвет текста */
+  max-width: 300px;
+}
+
+h5{
+  font-size: 14px;
+}
+
+.reeding__house__text p{
+  font-size: 16px;
+  color: #645C55;
+}
+
+/* ______________________________________ */
+/* OUR PROCESS  */
+
+.our__process{
+  margin: 100px 120px 100px 120px;
+  /* max-width: 1200px; */
+}
+
+.our__processs__title{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h4{
+  font-size: 14px;
+  margin-bottom: 13px;
+  color: #645C55;
+}
+
+.our__processs__title h2{
+  font-size: 39px;
+}
+
+.our_process__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.our_process__container__item {
+  text-align: center;
+  max-width: 378.66px;
+}
+
+.our_process__container__item__icon{
+  margin-bottom: 15px;
+}
+
+.our_process__container__item__text h6{
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.our_process__container__item__text p{
+  color: #645C55;
+  max-width: 292px;
+}
+
+/* ________________________________________________ */
+/* STAIRCASE */
+
+.staicase{
+  margin-top: 100px;
+  position: relative;
+  height: 100vh;
+  background-image: url('/images/staircase.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.staicase__text{
+  position: absolute; /* Абсолютное позиционирование текста поверх изображения */
+  left: 60px; /* Отступ справа 60px */
+  top: 50%; /* Центрирование по вертикали */
+  transform: translateY(50%); /* Чтобы текст оказался точно по центру вертикально */
+  color: #000; /* Цвет текста */
+  max-width: 300px;
+}
+
+.staicase h5{
+  font-size: 14px;
+  color: #403E3B;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.staicase__text p{
+  font-size: 16px;
+  color: #645C55;
+  max-width: 285px;
+}
+
+/* ______________________________________________________________ */
+/* PROJECTS */
+
+.projects__container{
+  background-color: #F7F7F7;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.projects{
+  margin: 0px 120px 0px 120px;
+  max-width: 1200px;
+}
+
+.projects__title{
+  text-align: start;
+  padding-left: 15px;
+  padding-bottom: 40px;
+}
+
+.projects__title h2{
+  font-size: 39px;
+  padding-bottom: 15px;
+}
+
+.projects__title p{
+  font-size: 24px;
+  color: #645C55;
+}
+
+.projects__img{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+
+.projects__img__item{
+  max-width: 379px;
+  max-height: 460px;
+}
+
+.projects__link{
+  text-align: center;
+}
+
+.projects__link a{
+  color: #000;
+}
+
+/* _______________________________________________________ */
+/*  TEAM  */
+
+.team{
+  margin: 100px 136px 100px 136px;
+  display: flex;
+}
+
+.team__text{
+  max-width: 378.66px;
+}
+
+.team__text h2{
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+
+.team__text p{
+  max-width: 358px;
+  color: #645C55;
+  font-style: 15px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.team__text a{
+  color: #000;
+}
+
+.team__list{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 773px;
+}
+
+.team__list__id{
+  display: flex;
+  margin-bottom: 36px;
+  margin-right: 115px;
+}
+
+#stephan1{
+  width: 84px;
+  height: 84px;
+  border:3px solid #CEC4BC;
+  border-radius: 100%;
+}
+
+.team__list__id div{
+  margin-left: 30px;
+}
+
+/* _________________________________________________ */
+/* GET IN TOUCH */
+
+.getintouch{
+  background-color: #CEC4BC;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.getintouch__text{
+  margin: 0px 136px 0px 136px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.getintouch__text__left{
+  align-items: center;
+}
+
+.getintouch__text__left h2{
+  font-size: 40px;
+  max-width: 569px;
+}
+
+.getintouch__text__left p{
+  font-size: 14px;
+  color: #645C55;
+}
+
+.getintouch__text__right{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+/* ______________________________________________ */
+/* FOOTER */
+
+.footer{
+  background-color: #F7F7F7;
+  padding-top: 60px;
+  padding-left: 136px;
+}
+
+.footer__content{
+  margin: 60px 136px 60px 136px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__content_text__logo{
+  max-width: 256px;
+  margin-bottom: 20px;
+}
+
+.footer__content_text p{
+  size: 14px;
+  color: #645C55;
+}
+
+.footer__content__socials{
+  display: flex;
+  align-items: end;
+}
+
+.footer__content__socials__icon{
+  width: 24px;
+  height: 25px;
+}
